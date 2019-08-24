@@ -1,0 +1,8 @@
+apply plugin: 'com.android.application'
+
+def config = rootProject.extensions.getByName("ext")
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(config.modules.feature)
+}
