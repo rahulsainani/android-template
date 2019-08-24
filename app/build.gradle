@@ -1,9 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
-def config = rootProject.extensions.getByName("ext")
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(config.modules.feature)
+    implementation project(Modules.feature)
 }

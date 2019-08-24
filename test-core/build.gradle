@@ -1,16 +1,16 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
-def config = rootProject.extensions.getByName("ext")
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation config.dependencies.kotlin
-    implementation config.dependencies.rxjava
-    implementation config.dependencies.dagger
-    implementation config.dependencies.extensions
-    api config.dependencies.jUnitJupiter
-    api config.dependencies.mockitoKotlin
-    api config.dependencies.mockitoInline
-    api config.dependencies.assertJ
+
+    implementation Libs.kotlin_stdlib_jdk7
+    implementation Libs.rxJava
+    implementation Libs.dagger
+    implementation Libs.lifecycleExtensions
+
+    api Libs.junitJupiter
+    api Libs.mockitoKotlin
+    api Libs.mockitoInline
+    api Libs.assertJCore
 }

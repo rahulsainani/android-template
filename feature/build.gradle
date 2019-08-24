@@ -3,20 +3,18 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
-def config = rootProject.extensions.getByName("ext")
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api project(config.modules.base)
+    api project(Modules.base)
 
     // Dependency Injection
-    kapt config.dependencies.daggerCompiler
+    kapt Libs.daggerCompiler
 
     // AndroidX
-    implementation config.dependencies.appCompat
-    implementation config.dependencies.constraintLayout
-    implementation config.dependencies.recyclerView
+    implementation Libs.appCompat
+    implementation Libs.constraintLayout
+    implementation Libs.recyclerview
 
     // Testing
-    testImplementation project(config.modules.testCore)
+    testImplementation project(Modules.testCore)
 }

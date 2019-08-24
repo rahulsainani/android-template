@@ -3,45 +3,43 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
-def config = rootProject.extensions.getByName("ext")
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // Kotlin
-    api config.dependencies.kotlin
-    api config.dependencies.ktx
+    api Libs.kotlin_stdlib_jdk7
+    api Libs.coreKtx
 
     // Logging
-    api config.dependencies.timber
+    api Libs.timber
 
     // Rx
-    api config.dependencies.rxjava
+    api Libs.rxJava
 
     // Dependency Injection
-    api config.dependencies.dagger
-    kapt config.dependencies.daggerCompiler
-    api config.dependencies.findbugs
+    api Libs.dagger
+    kapt Libs.daggerCompiler
+    api Libs.jsr305
 
     // AndroidX
-    api config.dependencies.viewmodel
-    api config.dependencies.common
-    api config.dependencies.extensions
-    api config.dependencies.material
+    api Libs.lifecycleViewmodel
+    api Libs.lifecycleCommonJava8
+    api Libs.lifecycleExtensions
+    api Libs.material
 
     // Networking
-    implementation config.dependencies.okhttp
-    implementation config.dependencies.loggingInterceptor
-    implementation config.dependencies.retrofitGson
-    implementation config.dependencies.retrofitRx
-    api config.dependencies.retrofit
+    implementation Libs.okHttp
+    implementation Libs.loggingInterceptor
+    implementation Libs.retrofitGson
+    implementation Libs.retrofitRx
+    api Libs.retrofit
 
     // Serialisation
-    api config.dependencies.gson
+    api Libs.gson
 
     // Testing
-    testImplementation config.dependencies.jUnitJupiter
-    testImplementation config.dependencies.mockitoKotlin
-    testImplementation config.dependencies.mockitoInline
-    testImplementation config.dependencies.assertJ
+    testImplementation Libs.junitJupiter
+    testImplementation Libs.mockitoKotlin
+    testImplementation Libs.mockitoInline
+    testImplementation Libs.assertJCore
 }
