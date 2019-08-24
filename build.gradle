@@ -16,7 +16,7 @@ ext {
             lifecycle         : "2.0.0",
             lottie            : "2.8.0",
 
-            dagger            : "2.23.1",
+            dagger            : "2.24",
             okhttp            : "3.14.2",
             loggingInterceptor: "3.11.0",
             rxjava            : "2.2.9",
@@ -40,7 +40,7 @@ ext {
             recyclerView      : "androidx.recyclerview:recyclerview:${versions.recyclerview}",
             constraintLayout  : "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}",
             viewmodel         : "androidx.lifecycle:lifecycle-viewmodel:${versions.lifecycle}",
-            common            : "androidx.lifecycle:lifecycle-common:${versions.lifecycle}",
+            common            : "androidx.lifecycle:lifecycle-common-java8:${versions.lifecycle}",
             extensions        : "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle}",
             lottie            : "com.airbnb.android:lottie:${versions.lottie}",
 
@@ -121,13 +121,6 @@ subprojects {
                     versionCode config.versionCode
                     versionName config.versionName
                     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-                    javaCompileOptions {
-                        annotationProcessorOptions {
-                            arguments = [
-                                    "dagger.gradle.incremental": "true"
-                            ]
-                        }
-                    }
                 }
                 buildTypes {
                     release {
