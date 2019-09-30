@@ -21,7 +21,7 @@ object Versions {
     const val jsr305 = "3.0.2"
     const val timber = "4.7.1"
     const val okHttp = "4.2.0"
-    const val retrofit = "2.6.1"
+    const val retrofit = "2.6.2"
     const val rxJava = "2.2.12"
     const val gson = "2.8.5"
 
