@@ -1,5 +1,0 @@
-rootProject.name='Template'
-include ':app'
-include ':base'
-include ':feature'
-include ':test-core'

@@ -1,7 +1,0 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(Modules.feature)
-}
