@@ -9,5 +9,7 @@ import template.base.di.ViewModelFactory
 abstract class ViewModelFactoryModule {
 
     @Binds
-    internal abstract fun bindViewModelFactory(viewModelFactory: ViewModelFactory): ViewModelProvider.Factory
+    internal abstract fun bindViewModelFactory(
+        viewModelFactory: ViewModelFactory
+    ): ViewModelProvider.Factory
 }

@@ -8,7 +8,10 @@ object AppComponentInjectHelper {
         return if (applicationContext is AppComponentProvider) {
             (applicationContext as AppComponentProvider).provideAppComponent()
         } else {
-            throw IllegalStateException("The application context you have passed does not implement AppComponentProvider")
+            throw IllegalStateException(MESSAGE)
         }
     }
+
+    private const val MESSAGE =
+        "The application context you have passed does not implement AppComponentProvider"
 }

@@ -1,7 +1,7 @@
 package template.test.core
 
-import org.junit.jupiter.api.extension.ExtendWith
 import javax.inject.Qualifier
+import org.junit.jupiter.api.extension.ExtendWith
 
 @Qualifier
 @Retention(AnnotationRetention.RUNTIME)

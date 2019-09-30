@@ -1,11 +1,11 @@
 package template.base.di.component
 
 import dagger.Component
-import template.base.di.module.NetworkModule
+import javax.inject.Singleton
 import retrofit2.Retrofit
 import template.base.data.ApiKey
 import template.base.di.module.ApplicationModule
-import javax.inject.Singleton
+import template.base.di.module.NetworkModule
 
 @Singleton
 @Component(modules = [ApplicationModule::class, NetworkModule::class])

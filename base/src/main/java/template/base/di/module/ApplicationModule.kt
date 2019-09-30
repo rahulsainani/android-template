@@ -4,8 +4,8 @@ import android.app.Application
 import android.content.Context
 import dagger.Module
 import dagger.Provides
-import template.base.di.ApplicationContext
 import javax.inject.Singleton
+import template.base.di.ApplicationContext
 
 @Module
 class ApplicationModule(private val application: Application) {
