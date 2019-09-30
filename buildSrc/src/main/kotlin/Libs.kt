@@ -26,8 +26,7 @@ object Libs {
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
-    const val loggingInterceptor =
-        "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
+    const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
     const val retrofitRx = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
     const val retrofitGson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
