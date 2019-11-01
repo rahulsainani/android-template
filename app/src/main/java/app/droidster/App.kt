@@ -4,7 +4,6 @@ import android.app.Application
 import template.base.di.AppComponentProvider
 import template.base.di.component.ApplicationComponent
 import template.base.di.component.DaggerApplicationComponent
-import template.base.di.module.NetworkModule
 import timber.log.Timber
 
 class App : Application(), AppComponentProvider {
@@ -12,7 +11,7 @@ class App : Application(), AppComponentProvider {
     private val applicationComponent by lazy {
         DaggerApplicationComponent
             .builder()
-            .networkModule(NetworkModule())
+            .applicationContext(this)
             .build()
     }
 

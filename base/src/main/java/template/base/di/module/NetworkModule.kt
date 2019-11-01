@@ -10,17 +10,15 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import template.base.data.ApiKey
 
 @Module
-class NetworkModule {
+object NetworkModule {
+
+    private const val BASE_URL = "https://"
 
     @Provides
     @Singleton
-    fun provideApiKey(): ApiKey = ApiKey(API_KEY)
-
-    @Provides
-    @Singleton
+    @JvmStatic
     fun provideLoggingInterceptor(): HttpLoggingInterceptor {
         val loggingInterceptor = HttpLoggingInterceptor()
         loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
@@ -29,6 +27,7 @@ class NetworkModule {
 
     @Provides
     @Singleton
+    @JvmStatic
     fun okHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor): OkHttpClient = OkHttpClient
         .Builder()
         .addInterceptor(httpLoggingInterceptor)
@@ -36,10 +35,12 @@ class NetworkModule {
 
     @Provides
     @Singleton
+    @JvmStatic
     fun provideGson(): Gson = GsonBuilder().create()
 
     @Provides
     @Singleton
+    @JvmStatic
     fun retrofit(okHttpClient: OkHttpClient, gson: Gson): Retrofit =
         Retrofit.Builder()
             .baseUrl(BASE_URL)
@@ -47,9 +48,4 @@ class NetworkModule {
             .addConverterFactory(GsonConverterFactory.create(gson))
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
-
-    companion object {
-        private const val BASE_URL = "https://"
-        private const val API_KEY = ""
-    }
 }

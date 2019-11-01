@@ -1,16 +1,27 @@
 package template.base.di.component
 
+import android.content.Context
+import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
 import retrofit2.Retrofit
-import template.base.data.ApiKey
-import template.base.di.module.ApplicationModule
+import template.base.di.ApplicationContext
 import template.base.di.module.NetworkModule
 
 @Singleton
-@Component(modules = [ApplicationModule::class, NetworkModule::class])
+@Component(modules = [NetworkModule::class])
 interface ApplicationComponent {
+
+    @ApplicationContext
+    fun context(): Context
+
     fun retrofit(): Retrofit
 
-    fun apiKey(): ApiKey
+    @Component.Builder
+    interface Builder {
+        @BindsInstance
+        fun applicationContext(@ApplicationContext applicationContext: Context): Builder
+
+        fun build(): ApplicationComponent
+    }
 }
