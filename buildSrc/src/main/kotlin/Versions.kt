@@ -16,21 +16,20 @@ object Versions {
     const val recyclerview = "1.0.0"
     const val material = "1.0.0"
 
-
-    const val dagger = "2.24"
+    const val dagger = "2.25.2"
     const val jsr305 = "3.0.2"
     const val timber = "4.7.1"
-    const val okHttp = "4.2.0"
+    const val okHttp = "4.2.2"
     const val retrofit = "2.6.2"
-    const val rxJava = "2.2.12"
-    const val gson = "2.8.5"
+    const val rxJava = "2.2.13"
+    const val gson = "2.8.6"
 
     const val junitJupiter = "5.5.2"
     const val mockitoKotlin = "2.1.0"
-    const val mockitoInline = "3.0.0"
-    const val assertJCore = "3.13.2"
+    const val mockitoInline = "3.1.0"
+    const val assertJCore = "3.14.0"
 
-    const val androidGradlePlugin = "3.5.0"
+    const val androidGradlePlugin = "3.5.1"
     const val ktlintGradlePlugin = "8.2.0"
     const val buildSrcVersionsPlugin = "0.4.2"
 

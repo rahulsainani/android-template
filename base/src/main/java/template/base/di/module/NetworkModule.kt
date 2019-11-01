@@ -14,11 +14,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 @Module
 object NetworkModule {
 
-    private const val BASE_URL = "https://"
+    private const val BASE_URL = "https://github.com"
 
     @Provides
     @Singleton
-    @JvmStatic
     fun provideLoggingInterceptor(): HttpLoggingInterceptor {
         val loggingInterceptor = HttpLoggingInterceptor()
         loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
@@ -27,7 +26,6 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    @JvmStatic
     fun okHttpClient(httpLoggingInterceptor: HttpLoggingInterceptor): OkHttpClient = OkHttpClient
         .Builder()
         .addInterceptor(httpLoggingInterceptor)
@@ -35,12 +33,10 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    @JvmStatic
     fun provideGson(): Gson = GsonBuilder().create()
 
     @Provides
     @Singleton
-    @JvmStatic
     fun retrofit(okHttpClient: OkHttpClient, gson: Gson): Retrofit =
         Retrofit.Builder()
             .baseUrl(BASE_URL)
