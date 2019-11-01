@@ -21,18 +21,17 @@ The template uses Kotlin and the following libraries:
 4. RecyclerView
 5. Constraint Layout
 6. AAC ViewModel and Lifecycle
-7. Lottie
-8. Dagger
-9. OkHttp
-10. LoggingInterceptor
-11. RxJava
-12. Retrofit
-13. Gson
-14. Timber
-15. Findbugs
-16. JUnitJupiter
-15. MockitoKotlin
-16. AssertJ
+7. Dagger
+8. OkHttp
+9. LoggingInterceptor
+10. RxJava
+11. Retrofit
+12. Moshi
+13. Timber
+14. Findbugs
+15. JUnitJupiter
+16. MockitoKotlin
+17. AssertJ
 
 The template uses Ktlint for formatting and lint checks.
 

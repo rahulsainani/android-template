@@ -22,7 +22,7 @@ object Versions {
     const val okHttp = "4.2.2"
     const val retrofit = "2.6.2"
     const val rxJava = "2.2.13"
-    const val gson = "2.8.6"
+    const val moshi = "1.9.1"
 
     const val junitJupiter = "5.5.2"
     const val mockitoKotlin = "2.1.0"

@@ -31,12 +31,12 @@ dependencies {
     // Networking
     implementation(Libs.okHttp)
     implementation(Libs.loggingInterceptor)
-    implementation(Libs.retrofitGson)
+    implementation(Libs.retrofitMoshi)
     implementation(Libs.retrofitRx)
     api(Libs.retrofit)
 
     // Serialisation
-    api(Libs.gson)
+    implementation(Libs.moshi)
 
     // Testing
     testImplementation(project(Modules.testCore))

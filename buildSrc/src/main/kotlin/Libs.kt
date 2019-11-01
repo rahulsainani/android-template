@@ -23,12 +23,12 @@ object Libs {
     const val daggerCompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
     const val jsr305 = "com.google.code.findbugs:jsr305:${Versions.jsr305}"
     const val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
-    const val gson = "com.google.code.gson:gson:${Versions.gson}"
+    const val moshi = "com.squareup.moshi:moshi:${Versions.moshi}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
     const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
     const val retrofitRx = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
-    const val retrofitGson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+    const val retrofitMoshi = "com.squareup.retrofit2:converter-moshi:${Versions.retrofit}"
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
 
     // Testing
