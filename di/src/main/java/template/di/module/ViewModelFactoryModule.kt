@@ -1,9 +1,9 @@
-package template.base.di.module
+package template.di.module
 
 import androidx.lifecycle.ViewModelProvider
 import dagger.Binds
 import dagger.Module
-import template.base.di.ViewModelFactory
+import template.di.ViewModelFactory
 
 @Module
 abstract class ViewModelFactoryModule {

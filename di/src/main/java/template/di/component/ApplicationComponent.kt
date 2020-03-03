@@ -1,4 +1,4 @@
-package template.base.di.component
+package template.di.component
 
 import android.content.Context
 import dagger.BindsInstance
@@ -6,7 +6,7 @@ import dagger.Component
 import javax.inject.Singleton
 import retrofit2.Retrofit
 import template.base.di.ApplicationContext
-import template.base.di.module.NetworkModule
+import template.di.module.NetworkModule
 
 @Singleton
 @Component(modules = [NetworkModule::class])

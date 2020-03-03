@@ -8,6 +8,7 @@ apply(from = "${rootProject.projectDir}/android.gradle")
 
 dependencies {
     implementation(project(Modules.base))
+    implementation(project(Modules.di))
 
     implementation(Libs.kotlin_stdlib_jdk7)
     implementation(Libs.coreKtx)
@@ -33,4 +34,5 @@ dependencies {
 
     // Testing
     testImplementation(project(Modules.testCore))
+    testRuntimeOnly(Libs.junitJupiterEngine)
 }

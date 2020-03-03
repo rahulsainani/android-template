@@ -9,6 +9,7 @@ dependencies {
     implementation(Libs.coreKtx)
 
     implementation(project(Modules.base))
+    implementation(project(Modules.di))
     implementation(project(Modules.feature))
 
     implementation(Libs.timber)

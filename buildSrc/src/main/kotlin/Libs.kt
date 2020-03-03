@@ -6,6 +6,11 @@ object Libs {
     const val kotlin_gradle_plugin =
         "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.org_jetbrains_kotlin}"
 
+    const val coroutinesCore =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val coroutinesAndroid =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+
     const val coreKtx = "androidx.core:core-ktx:${Versions.ktx}"
     const val lifecycleCommonJava8 =
         "androidx.lifecycle:lifecycle-common-java8:${Versions.androidxLifecycle}"
@@ -21,7 +26,6 @@ object Libs {
 
     const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
     const val daggerCompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
-    const val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
     const val moshi = "com.squareup.moshi:moshi:${Versions.moshi}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
@@ -32,10 +36,13 @@ object Libs {
 
     // Testing
     const val junitJupiter = "org.junit.jupiter:junit-jupiter-api:${Versions.junitJupiter}"
+    const val junitJupiterEngine = "org.junit.jupiter:junit-jupiter-engine:${Versions.junitJupiter}"
     const val mockitoInline = "org.mockito:mockito-inline:${Versions.mockitoInline}"
     const val mockitoKotlin =
         "com.nhaarman.mockitokotlin2:mockito-kotlin:${Versions.mockitoKotlin}"
     const val assertJCore = "org.assertj:assertj-core:${Versions.assertJCore}"
+    const val coroutinesTest =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
 
     // Plugins
     const val androidGradlePlugin =

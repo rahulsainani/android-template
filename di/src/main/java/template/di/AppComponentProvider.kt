@@ -1,6 +1,6 @@
-package template.base.di
+package template.di
 
-import template.base.di.component.ApplicationComponent
+import template.di.component.ApplicationComponent
 
 interface AppComponentProvider {
     fun provideAppComponent(): ApplicationComponent

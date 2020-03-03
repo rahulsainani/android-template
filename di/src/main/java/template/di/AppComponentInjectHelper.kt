@@ -1,7 +1,7 @@
-package template.base.di
+package template.di
 
 import android.content.Context
-import template.base.di.component.ApplicationComponent
+import template.di.component.ApplicationComponent
 
 object AppComponentInjectHelper {
     fun provideAppComponent(applicationContext: Context): ApplicationComponent {

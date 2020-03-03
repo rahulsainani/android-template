@@ -1,9 +1,9 @@
 package template.feature.di
 
 import dagger.Component
-import template.base.di.PerActivity
-import template.base.di.component.ApplicationComponent
-import template.base.di.module.ViewModelFactoryModule
+import template.di.PerActivity
+import template.di.component.ApplicationComponent
+import template.di.module.ViewModelFactoryModule
 import template.feature.FeatureActivity
 
 @PerActivity

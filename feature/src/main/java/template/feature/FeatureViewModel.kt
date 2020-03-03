@@ -1,6 +1,6 @@
 package template.feature
 
+import androidx.lifecycle.ViewModel
 import javax.inject.Inject
-import template.base.presentation.BaseViewModel
 
-class FeatureViewModel @Inject constructor() : BaseViewModel()
+class FeatureViewModel @Inject constructor() : ViewModel()

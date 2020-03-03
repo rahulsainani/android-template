@@ -1,9 +1,9 @@
 package app.droidster
 
 import android.app.Application
-import template.base.di.AppComponentProvider
-import template.base.di.component.ApplicationComponent
-import template.base.di.component.DaggerApplicationComponent
+import template.di.AppComponentProvider
+import template.di.component.ApplicationComponent
+import template.di.component.DaggerApplicationComponent
 import timber.log.Timber
 
 class App : Application(), AppComponentProvider {

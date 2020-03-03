@@ -1,4 +1,4 @@
-package template.base.di
+package template.di
 
 import javax.inject.Scope
 import kotlin.annotation.AnnotationRetention.RUNTIME

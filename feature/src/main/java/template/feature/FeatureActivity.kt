@@ -2,18 +2,17 @@ package template.feature
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import template.base.di.AppComponentInjectHelper
-import template.feature.di.DaggerFeatureComponent
 import javax.inject.Inject
+import template.di.AppComponentInjectHelper
+import template.feature.di.DaggerFeatureComponent
 
 class FeatureActivity : AppCompatActivity() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    private lateinit var viewModel: ViewModel
+    private lateinit var viewModel: FeatureViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

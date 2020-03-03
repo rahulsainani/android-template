@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
-import template.base.di.ViewModelKey
+import template.di.ViewModelKey
 import template.feature.FeatureViewModel
 
 @Module
