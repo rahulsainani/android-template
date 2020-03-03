@@ -21,7 +21,6 @@ object Libs {
 
     const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
     const val daggerCompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
-    const val jsr305 = "com.google.code.findbugs:jsr305:${Versions.jsr305}"
     const val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
     const val moshi = "com.squareup.moshi:moshi:${Versions.moshi}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"

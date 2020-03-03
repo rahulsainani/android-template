@@ -4,10 +4,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
-import javax.inject.Inject
 import template.base.di.AppComponentInjectHelper
 import template.feature.di.DaggerFeatureComponent
+import javax.inject.Inject
 
 class FeatureActivity : AppCompatActivity() {
 
@@ -21,7 +20,7 @@ class FeatureActivity : AppCompatActivity() {
         setContentView(R.layout.activity_feature)
 
         inject()
-        viewModel = ViewModelProviders.of(this, viewModelFactory)[FeatureViewModel::class.java]
+        viewModel = ViewModelProvider(this, viewModelFactory)[FeatureViewModel::class.java]
     }
 
     private fun inject() =

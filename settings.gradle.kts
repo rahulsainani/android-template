@@ -1,7 +1,7 @@
 rootProject.name = "Template"
 include(
-    Modules.app,
-    Modules.base,
-    Modules.feature,
-    Modules.testCore
+    ":app",
+    ":base",
+    ":feature",
+    ":test-core"
 )
